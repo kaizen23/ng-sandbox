@@ -1,0 +1,11 @@
+app-sb-spinner {
+  background-color: red;
+
+  &.small-spinner {
+    font-size: 12px;
+  }
+
+  &.medium-spinner {
+    font-size: 16px;
+  }
+}
