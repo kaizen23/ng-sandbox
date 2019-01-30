@@ -5,13 +5,15 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { SbSpinnerComponent } from './sb-spinner/sb-spinner.component';
 import { SbSpinnerDirective } from './sb-spinner.directive';
+import { TestSubjectComponent } from './test-subject/test-subject.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SbSpinnerComponent,
-    SbSpinnerDirective
+    SbSpinnerDirective,
+    TestSubjectComponent
   ],
   imports: [
     BrowserModule
