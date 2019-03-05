@@ -8,6 +8,9 @@ import { SbSpinnerDirective } from './sb-spinner.directive';
 import { TestSubjectComponent } from './test-subject/test-subject.component';
 import { SbNgContentWithSelectComponent } from './sb-ng-content-with-select/sb-ng-content-with-select.component';
 import { SbSelectedComponent } from './sb-selected/sb-selected.component';
+import { AppRoutingModule } from './app.routing.module';
+import { RouterModule } from '@angular/router';
+import { DashboardComponent } from './components/dashboard.component';
 
 
 @NgModule({
@@ -17,12 +20,16 @@ import { SbSelectedComponent } from './sb-selected/sb-selected.component';
     SbSpinnerDirective,
     TestSubjectComponent,
     SbNgContentWithSelectComponent,
-    SbSelectedComponent
+    SbSelectedComponent,
+    DashboardComponent
   ],
   imports: [
-    BrowserModule
+    RouterModule,
+    BrowserModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
